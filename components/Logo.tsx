@@ -9,7 +9,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ }) => {
   return (
     <Link href='/'>
-      <div className='tracking-wide flex text-white items-center leading-none text-shadow font-alfa text-[1.75rem]'>
+      <div className='tracking-wide flex  items-center leading-none text-shadow font-alfa text-[1.75rem]'>
 
         <div className='logo-svg'>
           <Svg />

@@ -7,7 +7,7 @@ interface MintBannerProps {
 
 export const MintBanner: React.FC<MintBannerProps> = ({ }) => {
   return (
-    <div className='flex flex-col sm:flex-row w-full mt-12 mb-8 p-6 items-center bg-gradient-to-br to-[#0CF2FF] from-[#F709FF] text-white'>
+    <div className='flex flex-col sm:flex-row w-full mt-12 mb-8 p-6 items-center bg-gradient-to-br to-[#0CF2FF] from-[#F709FF] '>
       <div className='flex p-3 sm:w-1/3 justify-center'>
         <div className=' font-bold text-[2rem] items-center text-center'>
           Join The Party!
@@ -28,7 +28,7 @@ export const MintBanner: React.FC<MintBannerProps> = ({ }) => {
         </div>
       </div>
       <div className='flex py-3 px-0 sm:w-1/3 items-center justify-center'>
-        <MintButton title={'MINT NOW'} style={'text-white border-2 border-white hover:shadow hover:bg-white hover:bg-opacity-10 rounded-xl px-2  font-bold text-[2rem] items-center text-center'} />
+        <MintButton title={'MINT NOW'} style={' border-2 border-white hover:shadow hover:bg-white hover:bg-opacity-10 rounded-xl px-2  font-bold text-[2rem] items-center text-center'} />
       </div>
     </div>
   )

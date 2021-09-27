@@ -9,7 +9,7 @@ interface FooterItemProps {
 export const FooterItem: React.FC<FooterItemProps> = ({ name, href }) => {
   return (
     <Link href={href}>
-      <div className='mx-1 px-1 text-white'>{name}</div>
+      <div className='mx-1 px-1 '>{name}</div>
     </Link>
   )
 }

@@ -4,12 +4,13 @@ import React from 'react'
 import { Logo } from './Logo'
 // import { Menu } from './Menu'
 import { MintButton } from './MintButton'
+import { Account } from './Account'
 
 interface HeaderProps {
-
+  triedToEagerConnect
 }
 
-export const Header: React.FC<HeaderProps> = ({ }) => {
+export const Header: React.FC<HeaderProps> = ({ triedToEagerConnect }) => {
   const [bg, setBg] = useState(false);
 
   const updateBg = () => {
@@ -27,7 +28,8 @@ export const Header: React.FC<HeaderProps> = ({ }) => {
       <Logo />
       {/* <Menu />
       <ConnectButton /> */}
-      <MintButton title={'🎉 MINT'} style={'font-medium border-2 border-gray-100 hover:border-white hover:bg-white hover:bg-opacity-10 text-[1.5rem] rounded-xl shadow-md px-3 py-1 text-gray-100 hover:text-white'} />
+      {/* <MintButton title={'🎉 MINT'} style={'font-medium border-2 border-gray-100 hover:border-white hover:bg-white hover:bg-opacity-10 text-[1.5rem] rounded-xl shadow-md px-3 py-1 text-gray-100 hover:'} /> */}
+      <Account triedToEagerConnect={triedToEagerConnect} />
     </header>
     </div>
   )

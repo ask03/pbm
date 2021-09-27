@@ -12,14 +12,14 @@ export const Roadmap: React.FC<RoadmapProps> = ({ }) => {
       <div className='text-center text-transparent bg-clip-text animate-gradient-x bg-gradient-to-l to-[#0CF2FF] from-[#F709FF] font-extrabold text-[3rem] sm:text-[4rem] px-8 pt-8'>
         Roadmap
       </div>
-      <div className='text-center  text-white text-[1.1rem] pt-2 pb-6 px-8 leading-none justify-center'>
+      <div className='text-center text-[1.1rem] pt-2 pb-6 px-8 leading-none justify-center'>
         Join our community on&nbsp;
         <a href={'https://discord.gg/hujxVvKmD4'} target='_blank' rel="noreferrer" className='hover:text-white hover:text-opacity-75 underline'>
         Discord</a>&nbsp;and&nbsp;
         <a href={'https://twitter.com/PlayBirdMansion'} target='_blank' rel="noreferrer" className='hover:text-white hover:text-opacity-75 underline'>
         Twitter</a> to stay up to date with our current party plans!
       </div>
-      <VerticalTimeline>
+      <VerticalTimeline className='text-black'>
         <VerticalTimelineElement
           className='vertical-timeline-element--work'
           iconStyle={{ background: 'rgb(12,242,255)', color: '#fff' }}
