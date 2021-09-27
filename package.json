@@ -1,0 +1,37 @@
+{
+  "name": "play-bird-mansion",
+  "author": "snrou",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "akar-icons": "^1.8.11",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-fast-marquee": "^1.2.1",
+    "react-spring": "^9.2.4",
+    "react-vertical-timeline-component": "^3.3.3",
+    "styled-components": "^5.3.1",
+    "surge": "^0.23.0",
+    "web3": "^1.5.3",
+    "web3-utils": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.20",
+    "@types/styled-components": "^5.1.14",
+    "@types/webpack-env": "^1.16.2",
+    "autoprefixer": "^10.3.4",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15",
+    "typescript": "4.4.3"
+  }
+}
