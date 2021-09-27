@@ -14,9 +14,9 @@ export const Roadmap: React.FC<RoadmapProps> = ({ }) => {
       </div>
       <div className='text-center  text-white text-[1.1rem] pt-2 pb-6 px-8 leading-none justify-center'>
         Join our community on&nbsp;
-        <a href={'https://discord.gg/hujxVvKmD4'} target='_blank' className='hover:text-white hover:text-opacity-75 underline'>
+        <a href={'https://discord.gg/hujxVvKmD4'} target='_blank' rel="noreferrer" className='hover:text-white hover:text-opacity-75 underline'>
         Discord</a>&nbsp;and&nbsp;
-        <a href={'https://twitter.com/PlayBirdMansion'} target='_blank' className='hover:text-white hover:text-opacity-75 underline'>
+        <a href={'https://twitter.com/PlayBirdMansion'} target='_blank' rel="noreferrer" className='hover:text-white hover:text-opacity-75 underline'>
         Twitter</a> to stay up to date with our current party plans!
       </div>
       <VerticalTimeline>

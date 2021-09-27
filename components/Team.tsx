@@ -17,7 +17,7 @@ export const Team: React.FC<TeamProps> = ({ }) => {
       <div className='flex flex-col sm:flex-row w-full mt-4 mb-8 items-center'>
         <div className='justify-center flex px-3 py-4 sm:py-0 sm:w-1/3'>
           <div className=' font-bold text-[2rem] items-center text-center'>
-            <a href='https://twitter.com/PlayBirdMansion' target='_blank'><Image src={andrew} width='222' height='222' className='rounded-3xl' /></a>
+            <a href='https://twitter.com/PlayBirdMansion' target='_blank' rel="noreferrer"><Image src={andrew} width='222' height='222' className='rounded-3xl' /></a>
             <div className='font-medium text-[1.2rem] text-center items-center text-white'>
               Andrew
             </div>
@@ -28,7 +28,7 @@ export const Team: React.FC<TeamProps> = ({ }) => {
         </div>
         <div className='justify-center flex px-3 py-4 sm:py-0 sm:w-1/3'>
           <div className=' font-bold text-[2rem] items-center text-center'>
-            <a href='https://twitter.com/PBMSecurity' target='_blank'><Image src={allan} width='222' height='222' className='rounded-3xl' /></a>
+            <a href='https://twitter.com/PBMSecurity' target='_blank' rel="noreferrer"><Image src={allan} width='222' height='222' className='rounded-3xl' /></a>
             <div className='font-medium text-[1.2rem] text-center items-center text-white'>
             Allan
             </div>
@@ -39,7 +39,7 @@ export const Team: React.FC<TeamProps> = ({ }) => {
         </div>
         <div className='justify-center flex px-3 py-4 sm:py-0 sm:w-1/3'>
           <div className=' font-bold text-[2rem] items-center text-center'>
-            <a href='https://twitter.com/snrou' target='_blank'><Image src={nojus} width='222' height='222' className='rounded-3xl' /></a>
+            <a href='https://twitter.com/snrou' target='_blank' rel="noreferrer"><Image src={nojus} width='222' height='222' className='rounded-3xl' /></a>
             <div className='font-medium text-[1.2rem] text-center items-center text-white'>
             Nojus
             </div>

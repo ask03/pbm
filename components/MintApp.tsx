@@ -19,34 +19,6 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
   const [tokensLeft, setTokensLeft] = useState(0);
   const [connection, setConnection] = useState(false);
 
-  React.useEffect(() => {
-    const mount = async () => {
-      await loadBlockChainData();
-      await checkReferralStatus();
-      await loadTokenData();
-      window.ethereum.on('accountsChanged', (accounts) => {
-        let currentAccount = account;
-        if (accounts.length === 0) {
-          window.alert('Please connect to MetaMask');
-        } else if (accounts[0] !== currentAccount) {
-          currentAccount = accounts[0];
-          setAccount(currentAccount);
-        }
-        window.location.reload();
-      })
-      window.ethereum.on('chainChanged', (chainId) => {
-        if (chainId === '0x89') {
-          setConnection(true);
-        }
-        window.location.reload();
-      })
-      window.ethereum.on('disconnect', (error) => {
-        window.ethereum.request({ method: 'eth_requestAccounts' });
-      })
-    }
-    mount();
-  }, []);
-
   const loadBlockChainData = async () => {
     if (typeof window.ethereum !== 'undefined') {
       const web3 = new Web3(window.ethereum);
@@ -126,6 +98,34 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
   }
 
   const amountOfBirds = useRef({ value: 0 }) as any;
+
+  React.useEffect(() => {
+    const mount = async () => {
+      await loadBlockChainData();
+      await checkReferralStatus();
+      await loadTokenData();
+      window.ethereum.on('accountsChanged', (accounts) => {
+        let currentAccount = account;
+        if (accounts.length === 0) {
+          window.alert('Please connect to MetaMask');
+        } else if (accounts[0] !== currentAccount) {
+          currentAccount = accounts[0];
+          setAccount(currentAccount);
+        }
+        window.location.reload();
+      })
+      window.ethereum.on('chainChanged', (chainId) => {
+        if (chainId === '0x89') {
+          setConnection(true);
+        }
+        window.location.reload();
+      })
+      window.ethereum.on('disconnect', (error) => {
+        window.ethereum.request({ method: 'eth_requestAccounts' });
+      })
+    }
+    mount();
+  }, [account, checkReferralStatus(), loadBlockChainData(), loadTokenData()]);
   
   return (
     <>
