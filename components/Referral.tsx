@@ -11,7 +11,7 @@ export const Referral: React.FC<ReferralProps> = ({}) => {
         Referral Contest
       </div>
       <div className='text-center  text-white text-[1rem] pt-2 py-2 px-8 leading-none justify-center'>
-        When you mint a Play Bird with a referral address, you recieve a 2 MATIC discount.
+        When you mint a Play Bird with a referral address, you recieve a 4 MATIC discount.
       </div>
       <div className='text-center  text-white text-[1.1rem] pb-4 px-8 leading-none justify-center'>
         The wallets with the most referred bird mints will win prizes when all birds are sold out!
