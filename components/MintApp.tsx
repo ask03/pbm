@@ -145,7 +145,7 @@ export class MintApp extends Component<any, any> {
                     if (result === true || resultTwo > 0) {
                       total = total - (amount * 2);
                       total = total * (10 ** 18);
-                      this.mintBirdsWithReferral(amount, total, this.referralAddress.value);
+                      this.mintBirdsWithReferral(amount, total, this.referralAddress.current.value);
                     } else {
                       window.alert('Invalid Referral Address');
                     }
@@ -195,7 +195,7 @@ export class MintApp extends Component<any, any> {
             Use a referral address for a 4 MATIC discount!
           </div>
           <div className='py-2'>
-            {this.state.account !== '' ? null : <button type='submit' className='py-2 px-16 text-white text-[1.5rem] rounded-xl bg-gradient-to-tr from-[#C171DD] to-[#9D9BFF] my-2' onClick={(e) => this.state.connectWeb3(e)}>Connect Web3</button>}
+            {this.state.account !== '' ? null : <button type='submit' className='py-2 px-16 text-white text-[1.5rem] rounded-xl bg-gradient-to-tr from-[#C171DD] to-[#9D9BFF] my-2' onClick={(e) => this.connectWeb3(e)}>Connect Web3</button>}
             <div className='text-[.75rem]'>Account:<br /> {this.state.account}</div>
             {this.state.connection ? null : <h3>Please connect MetaMask to Polygon Network</h3>}
             {this.state.tokensLeft !== 0 ? <h3 className='mt-4'>{(this.state.tokensLeft).toString()}/6969 Birds Remaining</h3> : null}
