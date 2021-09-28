@@ -33,12 +33,12 @@ export const DropDown: React.FC<DropDownProps> = ({ setDropDown }) => {
     <div className='bg-black bg-opacity-75 z-[100] rounded hidden xs:flex fixed right-auto text-center text-[1rem] sm:text-[1.24rem]'>
       <div className='text-white ml-4 pr-4'>
         <a id='disc' href={'https://discord.gg/hujxVvKmD4'} target='_blank' rel="noreferrer">
-          <div className='flex flex-row py-2'>
+          <div className='flex flex-row py-2 items-center'>
             <DiscordFill fill='white' size='20' /><div className='pl-2'>Discord</div>
           </div>
         </a>
         <a id='twit' href={'https://twitter.com/PlayBirdMansion'} target='_blank' rel="noreferrer">
-          <div className='flex flex-row py-1'>
+          <div className='flex flex-row py-1 items-center'>
             <TwitterFill fill='white' size='20' /><div className='pl-2'>Twitter</div>
           </div>
         </a>
