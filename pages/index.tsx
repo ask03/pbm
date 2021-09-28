@@ -40,10 +40,10 @@ const Home: NextPage = () => {
         <Slider />
         <MintBanner />
         {/* <MintApp /> */}
-        <Roadmap />
+        <div id='roadmapScroll'><Roadmap /></div>
         <Perks />
         <Referral />
-        <Team />
+        <div id='teamScroll'><Team /></div>
 
         <Footer />
       </div>
