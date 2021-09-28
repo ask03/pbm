@@ -172,6 +172,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
                 max='20'
                 className='flex-row bg-[#4e4e4e] rounded-lg px-8 py-3 text-center my-2'
                 placeholder='Quantity'
+                onChange={checkReferralStatus}
                 ref={amountOfBirds}
               />
 
@@ -182,6 +183,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
                   min='42'
                   className='flex-row bg-[#4e4e4e] rounded-lg px-8 py-3 text-center mb-2 placeholder-text-[.5rem]'
                   placeholder='(Optional) Referral Address'
+                  onChange={checkReferralStatus}
                   ref={(input) => { setReferralAddress(input) }}
                 />
               }
@@ -195,8 +197,11 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
         <div className='leading-none py-2 font-extralight text-[.75rem]'>
           Max: 20 Birds per Transaction
         </div>
-        <div className='py-2 text-[.85rem] mb-2'>
+        <div className='pt-2 text-[.85rem]'>
           Use a referral address for a 4 MATIC discount!
+        </div>
+        <div className='text-[.85rem] mb-2 leading-none'>
+          You may only use a referral once.
         </div>
         <div className='py-2'>
           {account !== '' ? null : <button type='submit' className='py-2 px-16 text-white text-[1.5rem] rounded-xl bg-gradient-to-tr from-[#C171DD] to-[#9D9BFF] my-2' onClick={(e) => connectWeb3(e)}>Connect Web3</button>}
