@@ -170,6 +170,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
                 step='1'
                 type='number'
                 max='20'
+                min='0'
                 className='flex-row bg-[#4e4e4e] rounded-lg px-8 py-3 text-center my-2'
                 placeholder='Quantity'
                 onChange={checkReferralStatus && loadTokenData}
