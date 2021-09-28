@@ -31,7 +31,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
         setBalance(balance);
         setWeb3(web3);
       } else {
-        window.alert('Please connect your MetaMask account');
+        console.log('Please connect your MetaMask account');
       }
 
       try {
@@ -99,7 +99,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
 
   const amountOfBirds = useRef({ value: 0 }) as any;
 
-  React.useEffect(() => {
+  useEffect(() => {
     const mount = async () => {
       await loadBlockChainData();
       await checkReferralStatus();
@@ -125,7 +125,7 @@ export const MintApp: React.FC<MintAppProps> = ({ }) => {
       })
     }
     mount();
-  }, [checkReferralStatus]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
