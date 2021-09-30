@@ -10,8 +10,13 @@ export const Referral: React.FC<ReferralProps> = ({}) => {
       <div className='leading-none text-center text-transparent bg-clip-text animate-gradient-x bg-gradient-to-r to-[#0CF2FF] from-[#F709FF] font-extrabold text-[3rem] px-8 pt-8 mt-8'>
         Referral Contest
       </div>
+<<<<<<< HEAD
       <div className='text-center   text-[1rem] pt-2 py-2 px-8 leading-none justify-center'>
         When you mint a Play Bird with a referral address, you recieve a 2 MATIC discount.
+=======
+      <div className='text-center  text-white text-[1rem] pt-2 py-2 px-8 leading-none justify-center'>
+        When you mint a Play Bird with a referral address, you recieve a 4 MATIC discount.
+>>>>>>> e1639cca86ad25d7febf8273d58979e9b96c9bf6
       </div>
       <div className='text-center   text-[1.1rem] pb-4 px-8 leading-none justify-center'>
         The wallets with the most referred bird mints will win prizes when all birds are sold out!
