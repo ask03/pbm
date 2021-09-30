@@ -1,6 +1,8 @@
 import { useWeb3React } from '@web3-react/core'
-import { Contract } from 'ethers'
+import { ethers, Contract } from 'ethers'
 import React, { useEffect, useRef, useState } from 'react'
+import PlayBirdMansion from '../abis/PlayBirdMansion.json'
+
 
 interface MintAppProps {
   contract: Contract
@@ -29,6 +31,8 @@ export const MintApp: React.FC<MintAppProps> = ({ contract }) => {
   }
 
   const tokensLeft = async () => {
+    let provider = ethers.getDefaultProvider("https://speedy-nodes-nyc.moralis.io/d376b2384f04b47cf322a1c2/polygon/mainnet")
+    let contract = new ethers.Contract("0x2ce684d4bA8E47c12F5dbB474241968dC800b7Ca", PlayBirdMansion.abi, provider )
     let tokens = await contract.totalSupply().call();
     let remaining = 6969 - tokens;
     return remaining as number;
